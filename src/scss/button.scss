@@ -1,0 +1,85 @@
+.buttonNew {
+  width: 99px;
+  height: 44px;
+  /* Primary Gradient */
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  border-radius: 22px;
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height */
+
+  text-transform: uppercase;
+
+  color: #FFFFFF;
+}
+
+.buttonNew:hover {
+  width: 99px;
+  height: 44px;
+  /* Primary Gradient */
+
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  opacity: 0.5;
+  border-radius: 22px;
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height */
+
+  text-transform: uppercase;
+
+  color: #FFFFFF;
+}
+
+.buttonWhite {
+  width: 99px;
+  height: 44px;
+
+  border-radius: 22px;
+  background: white;
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+
+  border: 1px solid #8BA4F9;
+  /* identical to box height */
+
+  text-transform: uppercase;
+
+  /* Primary Color */
+
+  color: #BC9CFF;
+}
+
+.buttonWhite:hover {
+  width: 99px;
+  height: 44px;
+
+  border-radius: 22px;
+  background: white;
+
+  border: 1px solid #BC9CFF;
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height */
+
+  text-transform: uppercase;
+
+  /* Primary Color */
+
+  color: rgba(31, 32, 65, 0.5);
+}

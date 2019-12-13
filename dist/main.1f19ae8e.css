@@ -58,7 +58,8 @@ body {
   color: rgba(31, 32, 65, 0.75);
 }
 
-.dropbtn {
+.containerDropDown select {
+  -webkit-appearance: button;
   width: 320px;
   height: 44px;
   background: #FFFFFF;
@@ -76,71 +77,166 @@ body {
   color: rgba(31, 32, 65, 0.75);
 }
 
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-  position: relative;
+.containerDropDown::before {
+  content: "q";
+  width: 44px;
+  height: 44px;
+  position: absolute;
+  left: 50%;
+  font-size: 24px;
+  line-height: 24px;
+  /* Dark 50% */
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.maskTextField {
+  width: 320px;
+  height: 44px;
+  background: #FFFFFF;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.25);
+}
+
+.buttonNew {
+  width: 99px;
+  height: 44px;
+  /* Primary Gradient */
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  border-radius: 22px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height */
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.buttonNew:hover {
+  width: 99px;
+  height: 44px;
+  /* Primary Gradient */
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  opacity: 0.5;
+  border-radius: 22px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height */
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.buttonWhite {
+  width: 99px;
+  height: 44px;
+  border-radius: 22px;
+  background: white;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  border: 1px solid #8BA4F9;
+  /* identical to box height */
+  text-transform: uppercase;
+  /* Primary Color */
+  color: #BC9CFF;
+}
+
+.buttonWhite:hover {
+  width: 99px;
+  height: 44px;
+  border-radius: 22px;
+  background: white;
+  border: 1px solid #BC9CFF;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height */
+  text-transform: uppercase;
+  /* Primary Color */
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.rangeSlider {
+  width: 266px;
+  height: 6px;
+  background: #FFFFFF;
+  /* Dark 25% */
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+
+.logoText {
+  margin: 15px;
+}
+
+.logoImg {
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
+}
+
+.contanerLogo {
+  height: 40px;
+  width: 210px;
   display: inline-block;
 }
 
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
+.contanerMenu {
+  display: inline-block;
 }
 
-/* Links inside the dropdown */
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
+.menu-main {
+  list-style: none;
+  margin: 40px 0 5px;
+  padding: 25px 0 5px;
+}
+
+.menu-main li {
+  display: inline-block;
+}
+
+.menu-main a {
   text-decoration: none;
-  display: block;
-}
-
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {
-  background-color: #f1f1f1;
-}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {
-  background-color: #3e8e41;
-}
-
-.containerTextField {
-  width: 320px;
-  height: 64.44px;
-}
-
-.inputTextField {
-  width: 320px;
-  height: 44px;
-  background: #FFFFFF;
-  /* Dark 25% */
-  border: 1px solid rgba(31, 32, 65, 0.25);
-  box-sizing: border-box;
-  border-radius: 4px;
+  letter-spacing: 2px;
+  position: relative;
+  padding-bottom: 20px;
+  margin: 0 34px 0 30px;
+  text-transform: uppercase;
+  display: inline-block;
+  transition: color 0.2s;
   font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  line-height: 24px;
-  /* identical to box height, or 171% */
-  /* Dark 75% */
-  color: rgba(31, 32, 65, 0.75);
+  line-height: 17px;
+  /* Dark 50% */
+  color: rgba(31, 32, 65, 0.5);
 }
 
-.inputTextFieldDown {
-  width: 44px;
-  height: 44px;
+.menu-main a:hover {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  /* Dark 75% */
+  color: rgba(31, 32, 65, 0.75);
 }
 
 /*# sourceMappingURL=/main.1f19ae8e.css.map */

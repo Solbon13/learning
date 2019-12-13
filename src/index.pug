@@ -6,13 +6,39 @@ html(lang="en")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
         title Document
     body
-        h1 Hello Parcel!
+        h1 H1
         br
-        include Components/textField/index
+        h1 textField
+        include Components/FieldInput/textField/index
         br
+        h1 dropDown
         include Components/dropDown/index
+        br
+        h1 maskTextField
+        include Components/FieldInput/maskTextField/index
 
         br
-        label test
-        include Components/test
+        h1 Button
+        include Components/Button/index
+
+        br
+        h1 RangeSlider
+        include Components/FieldInput/RangeSlider/index
+
+        br
+        h1 radioButton
+        include Components/FieldInput/RadioButton/index
+        include Components/FieldInput/RadioButton/index
+
+        br
+        h1 logo img
+        include Components/logo/logo
+
+        br
+        h1 logo text
+        include Components/menu/index
+
+        br
+        h1 header
+        include blocks/header/index
         script(src='./main.js')

@@ -1,0 +1,45 @@
+.contanerMenu{
+  display:inline-block;
+}
+
+.menu-main {
+  list-style: none;
+  margin: 40px 0 5px;
+  padding: 25px 0 5px;
+}
+.menu-main li {display: inline-block;}
+
+.menu-main a {
+  text-decoration: none;
+  letter-spacing: 2px;
+  position: relative;
+  padding-bottom: 20px;
+  margin: 0 34px 0 30px;
+  text-transform: uppercase;
+  display: inline-block;
+  transition: color .2s;
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+
+  /* Dark 50% */
+
+  color: rgba(31, 32, 65, 0.5);
+
+
+}
+
+.menu-main a:hover {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+
+  /* Dark 75% */
+
+  color: rgba(31, 32, 65, 0.75);
+}
