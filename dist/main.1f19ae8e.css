@@ -58,15 +58,23 @@ body {
   color: rgba(31, 32, 65, 0.75);
 }
 
-.containerDropDown select {
-  -webkit-appearance: button;
+.containerDropDown {
   width: 320px;
-  height: 44px;
+  height: 50px;
+  display: inline-block;
   background: #FFFFFF;
   /* Dark 25% */
   border: 1px solid rgba(31, 32, 65, 0.25);
   box-sizing: border-box;
   border-radius: 4px;
+  padding: 0;
+}
+
+.textDropDown {
+  width: 274px;
+  height: 44px;
+  border: none;
+  padding: 0;
   font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
@@ -77,16 +85,70 @@ body {
   color: rgba(31, 32, 65, 0.75);
 }
 
-.containerDropDown::before {
-  content: "q";
+.arrowDropDown {
   width: 44px;
   height: 44px;
-  position: absolute;
-  left: 50%;
+  border: none;
+  padding: 0;
+  font-family: Material Icons;
+  font-style: normal;
+  font-weight: normal;
   font-size: 24px;
   line-height: 24px;
+  align-items: center;
+  text-align: center;
   /* Dark 50% */
   color: rgba(31, 32, 65, 0.5);
+}
+
+.containerDropDownSelect {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  width: 320px;
+}
+
+.containerDropDown:hover:hover .containerDropDownSelect {
+  display: block;
+}
+
+.buttonDropDownItems {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 22px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  align-items: center;
+  text-align: center;
+  background-color: #FFFFFF;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.textDropDownItems {
+  display: inline-block;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height */
+  text-transform: uppercase;
+  /* Dark 100% */
+  color: #1F2041;
+  width: 25%;
+}
+
+.containerDropDownItems {
+  width: 320px;
 }
 
 .maskTextField {
